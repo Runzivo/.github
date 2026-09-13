@@ -1,0 +1,33 @@
+{
+  "name": "runzivo-github-profile",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@12.4.1",
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "24.21.0",
+      "onFail": "download"
+    },
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.4.1",
+      "onFail": "download"
+    }
+  },
+  "engines": {
+    "node": "24.21.0",
+    "pnpm": "12.4.1"
+  },
+  "scripts": {
+    "preinstall": "node scripts/require-pnpm.mjs",
+    "guard:runtime": "node scripts/require-pnpm.mjs",
+    "check": "pnpm run guard:runtime && node scripts/check-profile.mjs",
+    "fmt": "pnpm run guard:runtime && prettier --write \"**/*.{md,json,mjs}\"",
+    "fmt:check": "pnpm run guard:runtime && prettier --check \"**/*.{md,json,mjs}\"",
+    "audit:security": "pnpm run guard:runtime && pnpm audit --audit-level=moderate"
+  },
+  "devDependencies": {
+    "prettier": "3.9.6"
+  }
+}
