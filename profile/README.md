@@ -4,4 +4,4 @@
 
 Runzivo is building fast, secure, scalable CI/CD compute and managed runners for software teams. V1 starts with Linux x64 runners for GitHub Actions.
 
-**Planned Early Access:** Email [hello@runzivo.dev](mailto:hello@runzivo.dev) to request access. After approval, install the Runzivo GitHub App for selected repositories, then change a job to `runs-on: runzivo-linux-x64`.
+**Planned Early Access:** Email [run@runzivo.dev](mailto:run@runzivo.dev) to request access. After approval, install the Runzivo GitHub App for selected repositories, then change a job to `runs-on: runzivo-linux-x64`.
