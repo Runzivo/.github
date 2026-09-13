@@ -16,4 +16,5 @@ pnpm audit:security
 ```
 
 `pnpm check` confirms the required organization profile path, header asset,
-approved company copy, runner label, public links, and excluded claims.
+approved company copy, concise Early Access flow, runner label, and excluded
+claims.
