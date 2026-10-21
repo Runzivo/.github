@@ -14,8 +14,8 @@ const pngSignature = Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]);
 const requiredText = [
   "Runzivo is building fast, secure, scalable CI/CD compute and managed runners for software teams. V1 starts with Linux x64 runners for GitHub Actions.",
   "Faster CI. Less waiting.",
-  "**Planned Early Access:** Email [run@runzivo.dev](mailto:run@runzivo.dev) to request access. After approval, install the Runzivo GitHub App for selected repositories, then change a job to `runs-on: runzivo-linux-x64`.",
-  "runs-on: runzivo-linux-x64",
+  "**Early Access:** Connect a GitHub organization, including GitHub Free organizations, and select the repository that will use Runzivo. Personal repositories are unsupported. Change the job to `runs-on: rzv-ubuntu-24.04-x64-2vcpu-8gb`. See [getting started](https://runzivo.dev/docs/getting-started) or email [run@runzivo.dev](mailto:run@runzivo.dev).",
+  "runs-on: rzv-ubuntu-24.04-x64-2vcpu-8gb",
   "run@runzivo.dev",
 ];
 const rejectedText = [
@@ -26,7 +26,6 @@ const rejectedText = [
   "Apple Silicon",
   "ARM",
   "benchmark",
-  "https://runzivo.dev",
   "https://x.com/runzivo",
   "https://www.linkedin.com/company/runzivo",
   "https://www.youtube.com/@runzivo",
